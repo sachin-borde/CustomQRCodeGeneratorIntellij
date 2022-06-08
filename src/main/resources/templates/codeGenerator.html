@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Certificate</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<style>
+.form-box {
+	margin: 0 auto !important;
+	float: inherit !important;
+	color: #fff;
+}
+
+.heading {
+	margin-bottom: 30px;
+}
+
+.form-bg {
+	background-image: url("DigitalCadTraining.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+</head>
+<body>
+</head>
+<body class="form-bg">
+	<div class="container">
+		<div class="col-md-6 form-box ">
+
+			<h2 class="heading">Insta Code Technologies</h2><br>
+			<form action="#" th:action="@{/savedata}" th:object="${company}"
+				enctype="multipart/form-data" method="post">
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-4 col-form-label">Company
+						Name:</label>
+					<div class="col-sm-8">
+						<input class="form-control" type="text" name="companyName"
+							placeholder="ENTER COMPANY NAME" required="true" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputEmail3" class="col-sm-4 col-form-label">Student First Name : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="text" name="studentFname"
+							placeholder="ENTER STUDENT FIRST NAME" required="true" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputEmail3" class="col-sm-4 col-form-label">Student Last Name : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="text" name="studentLname"
+							placeholder="ENTER STUDENT LAST NAME" required="true" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-4 col-form-label">Join
+						Date : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="date" name="joinDate"
+							placeholder="ENTER JOIN DATE" required="true" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-4 col-form-label">Exit
+						Date : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="date" name="exitDate"
+							placeholder="ENTER EXIT DATE" required="true" />
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-4 col-form-label">Company
+						Email : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="email" name="companyEmail"
+							placeholder="ENTER COMPANY EMAIL" required="true" />
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="inputPassword3" class="col-sm-4 col-form-label">Company
+						Website : </label>
+					<div class="col-sm-8">
+						<input class="form-control" type="url" name="companyWebsite"
+							placeholder="ENTER COMPANY WEBSITE" required="true" />
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<div class="col-sm-10 text-center">
+						<button type="submit" class="btn btn-success">SAVE</button>
+
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
